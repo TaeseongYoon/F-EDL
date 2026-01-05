@@ -18,10 +18,10 @@ The main code for running F-EDL experiments is located in main.py. The script se
 ## How to Use
 To run F-EDL experiments, execute the main.py script with the desired arguments. Below are example commands for different experimental setups:
 
-1. Classical setting (CIFAR-10/CIFAR-100): python main.py --spect_norm
-2. Long-tailed setting (mild imbalance, CIFAR-10-LT (rho = 0.1)): python main.py --imbalance_factor 0.1 --spect_norm 
-3. Long-tailed setting (heavy imbalance, CIFAR-10-LT (rho = 0.01): python main.py --imbalance_factor 0.01 --spect_norm
-4. Noisy setting (DMNIST): python main.py --ID_dataset "MNIST" --noise --spect_norm
+* (i) **Classical setting (CIFAR-10/CIFAR-100)**: python main.py --spect_norm
+* (ii) **Long-tailed setting (mild imbalance, CIFAR-10-LT (rho = 0.1))**: python main.py --imbalance_factor 0.1 --spect_norm 
+* (iii) **Long-tailed setting (heavy imbalance, CIFAR-10-LT (rho = 0.01)**: python main.py --imbalance_factor 0.01 --spect_norm
+* (iv) **Noisy setting (DMNIST)**: python main.py --ID_dataset "MNIST" --noise --spect_norm
 
 Before running the code, please create the required directories: "./data", "./saved_results_fedl", and "./saved_models_fedl"
 These directories are used to store datasets, experimental results, and trained model checkpoints, respectively. In addition, if a dataset is not downloaded automatically, please download it manually and place it in the appropriate subdirectory under "./data". 
