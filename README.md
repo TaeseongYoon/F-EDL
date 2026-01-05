@@ -23,13 +23,8 @@ To run F-EDL experiments, execute the main.py script with the desired arguments.
 3. Long-tailed setting (heavy imbalance, CIFAR-10-LT (rho = 0.01): python main.py --imbalance_factor 0.01 --spect_norm
 4. Noisy setting (DMNIST): python main.py --ID_dataset "MNIST" --noise --spect_norm
 
-Before running the code, please create the required directories:
-
-```bash
-mkdir -p ./data ./saved_results_fedl ./saved_models_fedl
-These directories are used to store datasets, experimental results, and trained model checkpoints, respectively.
-In addition, if a dataset is not downloaded automatically, please download it manually and place it in the appropriate subdirectory under
-
+Before running the code, please create the required directories: "./data", "./saved_results_fedl", and "./saved_models_fedl"
+These directories are used to store datasets, experimental results, and trained model checkpoints, respectively. In addition, if a dataset is not downloaded automatically, please download it manually and place it in the appropriate subdirectory under "./data". 
 
 You can customize hyperparameters and options, such as dataset, batch size, learning rate, dropout rate, and weight decay, based on your experimental preferences.
 
