@@ -23,20 +23,15 @@ To run F-EDL experiments, execute the main.py script with the desired arguments.
 3. Long-tailed setting (heavy imbalance, CIFAR-10-LT (rho = 0.01): python main.py --imbalance_factor 0.01 --spect_norm
 4. Noisy setting (DMNIST): python main.py --ID_dataset "MNIST" --noise --spect_norm
 
-Before running the code, 
+Before running the code, please create the required directories:
+
+```bash
+mkdir -p ./data ./saved_results_fedl ./saved_models_fedl
+These directories are used to store datasets, experimental results, and trained model checkpoints, respectively.
+In addition, if a dataset is not downloaded automatically, please download it manually and place it in the appropriate subdirectory under
+
 
 You can customize hyperparameters and options, such as dataset, batch size, learning rate, dropout rate, and weight decay, based on your experimental preferences.
-
-[Environment Details] 
-* GPU: NVIDIA GeForce RTX 3060
-* Python: 3.10.12
-* PyTorch: 2.0.0
-* Torchvision: 0.15.1
-* Numpy: 1.26.4
-* Pandas: 2.2.3
-* Scipy: 1.11.1
-* Scikit-learn: 1.3.0
-* Tqdm: 4.65.0
 
 
 ## Citation
